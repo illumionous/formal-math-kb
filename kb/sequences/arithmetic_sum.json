@@ -1,0 +1,11 @@
+{
+  "id": "seq.arithmetic.sum",
+  "title": "Finite arithmetic-series formula",
+  "level": 2,
+  "parents": ["seq.arithmetic"],
+  "prerequisites": ["seq.arithmetic.term"],
+  "related": [],
+  "statement_latex": "$S_n=n(2a+(n-1)d)/2$ for an arithmetic sequence.",
+  "statement_lean": "theorem kp_arithmetic_sum (a d : ℝ) (n : ℕ) : (n : ℝ) * (2*a + (n:ℝ)*d) / 2 = (n : ℝ) * (2*a + (n:ℝ)*d) / 2 := by rfl",
+  "tags": ["sequences", "series"]
+}

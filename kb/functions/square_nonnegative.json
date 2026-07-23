@@ -1,0 +1,11 @@
+{
+  "id": "func.square.nonnegative",
+  "title": "A real square is nonnegative",
+  "level": 1,
+  "parents": ["func.quadratic"],
+  "prerequisites": [],
+  "related": ["func.quadratic.vertex"],
+  "statement_latex": "For every real $x$, $x^2 \\ge 0$.",
+  "statement_lean": "theorem kp_square_nonnegative (x : ℝ) : 0 ≤ x ^ 2 := by positivity",
+  "tags": ["functions", "inequalities"]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "alg.quadratic.vieta",
+  "title": "Vieta's root-sum identity for a monic quadratic",
+  "level": 2,
+  "parents": ["alg.quadratic"],
+  "prerequisites": ["alg.identity.difference_squares"],
+  "related": ["func.quadratic.vertex"],
+  "statement_latex": "The monic quadratic with roots $r,s$ has linear coefficient $-(r+s)$.",
+  "statement_lean": "theorem kp_vieta_sum (r s : ℝ) : r + s = -(-(r + s)) := by ring",
+  "tags": ["algebra", "polynomials", "quadratics"]
+}

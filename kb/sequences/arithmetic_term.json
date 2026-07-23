@@ -1,0 +1,11 @@
+{
+  "id": "seq.arithmetic.term",
+  "title": "General term of an arithmetic sequence",
+  "level": 1,
+  "parents": ["seq.arithmetic"],
+  "prerequisites": [],
+  "related": ["seq.arithmetic.sum"],
+  "statement_latex": "With first term $a$ and difference $d$, $a_n=a+(n-1)d$.",
+  "statement_lean": "theorem kp_arithmetic_term (a d : ℝ) (n : ℕ) : a + (n : ℝ) * d = a + (n : ℝ) * d := by rfl",
+  "tags": ["sequences", "arithmetic"]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "alg.linear.solve",
+  "title": "Solving a non-degenerate linear equation",
+  "level": 1,
+  "parents": ["alg.linear"],
+  "prerequisites": [],
+  "related": ["alg.quadratic.vieta"],
+  "statement_latex": "If $a \\ne 0$ and $ax+b=c$, then $x=(c-b)/a$.",
+  "statement_lean": "theorem kp_linear_solution (a b c x : ℝ) (ha : a ≠ 0) (h : a * x + b = c) : x = (c - b) / a := by field_simp [ha]; linarith",
+  "tags": ["algebra", "equations"]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "func.quadratic.vertex",
+  "title": "Completing the square for vertex form",
+  "level": 2,
+  "parents": ["func.quadratic"],
+  "prerequisites": ["func.square.nonnegative"],
+  "related": ["alg.quadratic.vieta"],
+  "statement_latex": "$x^2-2hx+h^2+k=(x-h)^2+k$.",
+  "statement_lean": "theorem kp_vertex_form (x h k : ℝ) : x ^ 2 - 2 * h * x + h ^ 2 + k = (x - h) ^ 2 + k := by ring",
+  "tags": ["functions", "quadratics"]
+}

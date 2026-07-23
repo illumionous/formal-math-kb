@@ -1,0 +1,11 @@
+{
+  "id": "geom.triangle.angle_sum",
+  "title": "Triangle angle-sum rearrangement",
+  "level": 1,
+  "parents": ["geom.triangle"],
+  "prerequisites": ["alg.linear.solve"],
+  "related": [],
+  "statement_latex": "If $a+b+c=180^\\circ$, then $a+b=180^\\circ-c$.",
+  "statement_lean": "theorem kp_triangle_angles (a b c : ℝ) (h : a + b + c = 180) : a + b = 180 - c := by linarith",
+  "tags": ["geometry", "triangles"]
+}

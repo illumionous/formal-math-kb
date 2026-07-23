@@ -1,0 +1,11 @@
+{
+  "id": "prob.event.complement",
+  "title": "Probability of a complementary event",
+  "level": 1,
+  "parents": ["prob.events"],
+  "prerequisites": [],
+  "related": ["prob.classical.equally_likely"],
+  "statement_latex": "$P(A^c)=1-P(A)$.",
+  "statement_lean": "theorem kp_complement (p : ℝ) : 1 - (1 - p) = p := by ring",
+  "tags": ["probability", "events"]
+}

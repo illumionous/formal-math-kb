@@ -1,0 +1,11 @@
+{
+  "id": "alg.identity.difference_squares",
+  "title": "Difference of two squares",
+  "level": 1,
+  "parents": ["alg.identities"],
+  "prerequisites": [],
+  "related": ["alg.quadratic.vieta"],
+  "statement_latex": "For real $x,y$, $(x-y)(x+y)=x^2-y^2$.",
+  "statement_lean": "theorem kp_difference_squares (x y : ℝ) : (x - y) * (x + y) = x ^ 2 - y ^ 2 := by ring",
+  "tags": ["algebra", "identities"]
+}

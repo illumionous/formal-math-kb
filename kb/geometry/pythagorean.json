@@ -1,0 +1,11 @@
+{
+  "id": "geom.right_triangle.pythagorean",
+  "title": "The 3-4-5 Pythagorean triple",
+  "level": 1,
+  "parents": ["geom.right_triangle"],
+  "prerequisites": [],
+  "related": ["trig.identity.pythagorean"],
+  "statement_latex": "$3^2+4^2=5^2$.",
+  "statement_lean": "theorem kp_pythagorean_345 : (3 : ℝ) ^ 2 + 4 ^ 2 = 5 ^ 2 := by norm_num",
+  "tags": ["geometry", "right-triangles"]
+}

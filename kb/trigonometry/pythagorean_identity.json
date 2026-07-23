@@ -1,0 +1,11 @@
+{
+  "id": "trig.identity.pythagorean",
+  "title": "Pythagorean trigonometric identity",
+  "level": 1,
+  "parents": ["trig.identities"],
+  "prerequisites": [],
+  "related": ["geom.right_triangle.pythagorean"],
+  "statement_latex": "For every real $x$, $\\sin^2x+\\cos^2x=1$.",
+  "statement_lean": "theorem kp_trig_pythagorean (x : ℝ) : Real.sin x ^ 2 + Real.cos x ^ 2 = 1 := by simpa [pow_two] using Real.sin_sq_add_cos_sq x",
+  "tags": ["trigonometry", "identities"]
+}
