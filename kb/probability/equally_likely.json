@@ -6,6 +6,6 @@
   "prerequisites": ["prob.event.complement"],
   "related": [],
   "statement_latex": "$P(A)=m/n$ when $m$ of $n$ equally likely outcomes are favorable.",
-  "statement_lean": "theorem kp_equally_likely (m n : ℕ) (h : n ≠ 0) : (m : ℚ) / n * n = m := by have hn : (n : ℚ) ≠ 0 := by exact_mod_cast h; field_simp [hn]",
+  "statement_lean": "theorem kp_equally_likely (m n : ℚ) (h : n ≠ 0) : m / n * n = m := by field_simp [h]",
   "tags": ["probability", "counting"]
 }

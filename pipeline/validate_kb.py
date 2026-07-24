@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 from pathlib import Path
 
 from .knowledge import load_knowledge_base
@@ -26,6 +27,11 @@ def main() -> None:
         print("warning: Lean unavailable; schema and graph were checked, statements were not compiled")
 
     if failures:
+        if os.environ.get("GITHUB_ACTIONS") == "true":
+            for failure in failures:
+                point_id, _, diagnostics = failure.partition(": ")
+                message = diagnostics.replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
+                print(f"::error title=Lean validation failed ({point_id})::{message}")
         raise SystemExit("\n".join(failures))
     print(f"knowledge_points={len(points)} graph=valid lean={'valid' if verifier.enabled else 'skipped'}")
 
